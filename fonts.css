@@ -1,0 +1,12 @@
+
+                    /* подключены шрифты Montserrat */
+
+@font-face{
+    font-family: Montserrat;
+    src: url(font-fam/Montserrat-Regular.eot);
+     src: url(font-fam/Montserrat-Regular.otf);
+     src: url(font-fam/Montserrat-Regular.svg);
+     src: url(font-fam/montserrat-regular.ttf);
+     src: url(font-fam/montserrat-regular.woff);
+     src: url(font-fam/montserrat-regular.woff2);
+}

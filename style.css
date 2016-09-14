@@ -1,0 +1,424 @@
+                    
+                                                /* обнуляем стандартные значения в разных браузерах */
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+}
+
+html, body{
+    height:100%;
+}
+
+p {
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+                                                        /*  КОНТЕНТ  */
+.content{
+    font-family:  'Montserrat', 'Arial', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+                                                        /*  ШАПКА С МЕНЮ  */
+header,
+.mini_menu{
+    width: 100%;
+    background-color: #373c3f;
+    position: relative;
+}
+ 
+
+                                                        /*  адаптивное меню  */
+.menu_trigger{
+    display:inline;
+    position: absolute;
+    right: 0px;
+    
+    
+}
+.menu_trigger>img{
+    border: 0;
+    vertical-align: top;
+}
+                                     
+
+                                                        /*  меню   */
+.mini_menu{
+    display: none;
+    overflow: hidden;
+}
+.mini_menu a{
+    float: right;
+    overflow: hidden;
+    background-color: #202529;
+    outline: none;
+    
+}
+.mini_menu p{
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    padding: 25px 0 18px 35px;
+}
+
+.menu{
+    display: block;
+    margin-left: 54px;
+    overflow: hidden;
+     
+}
+.menu li{
+    overflow: hidden;
+    float: left;
+    margin-left: 25px ;
+    padding: 35px 0  40px 0;
+}
+
+.menu li a{
+    display: block;
+    font-family:  Montserrat, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #fff;
+}
+
+.menu li a:hover{
+    text-decoration: underline;
+}
+                                            
+
+
+
+                                                /* ПЕРВЫЙ ЗЕЛЕНЫЙ БЛОК */
+.awesome{
+    height: 575px;
+    margin: 0 auto;
+    background: linear-gradient(45deg,#19b4c6,#078aa4 100%);
+    width: 100%;   
+}
+.awesome2{
+    margin-left: 80px;
+    max-width: 750px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.awesome2 h1 {
+    margin-bottom: 50px;
+    line-height: 65px;
+    font-size: 60px;
+    color: #fff;   
+}
+
+.awesome2 a p{
+    font-size:34px;
+    line-height: 65px;
+    color: #aad7e0;
+}
+
+
+                                            /* БОЛК С ОСТАЛЬНЫМ КОНТЕНТОМ  */
+.div_ves{
+    width: 100%;
+    overflow: hidden;
+    
+}
+.div1,
+.div2,
+.div3,
+.div4,
+.div5{
+    cursor:pointer;
+}
+                                            /* серый блок с надписью   I'm like the Robin Hood of PSD files*/
+    .div1{
+     width: 33.33333333333334%;
+     height: 15vw;
+     overflow: hidden; 
+     background-color: #27212c;
+     vertical-align: middle;
+     text-align: center;
+     float: left;
+}
+.div1 p{
+    color: #9282a0;
+    font-size: 30px;
+    
+     transform: translateY(-50%);
+     position: relative;
+     top: 50%;
+     
+}
+                                                /*  розовый блок  */
+.div2{
+    float: left;
+    position: relative;
+    width: 16.66666666666667%;
+    background-color: #bc3183;
+    height: 15vw;
+}
+
+                                                /*  фиалетовый блок */
+.div3{
+     float: left;
+     position: relative;
+     width: 16.66666666666667%;
+     background-color: #5b0fa1;
+     height: 15vw;
+}
+                                                /*  стили плавности при навидении на блоки  */
+.arrow {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    
+    transition-property: left;
+    transition-duration: 0.5s;
+    
+}
+                                                /*  стили плавности при увидения мыши с блока  */
+.divArr{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 55%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    
+    transition-property: left;
+    transition-duration: 0.5s;
+}
+                                                /* стрелка в блоке */
+.divArr img{
+    width: 20px;
+    border: 0;
+    vertical-align: top;
+}
+
+.arrow img{
+    width: 20px;
+    border: 0;
+    vertical-align: top;
+}
+
+                                                /* мост BG*/
+.div4{
+     float: left;
+     position: relative;
+     width: 16.66666666666667%;
+     height: 15vw;
+     background-image: url(images/most.jpg);
+     background-repeat: no-repeat;
+     background-position:center;
+     background-size:105%  105%;
+    
+   
+    -webkit-transition: background-size 0.5s ease-out 0s;
+    
+    transition: background-size 0.5s ease-out 0s;
+    
+}
+
+                                                        /*  увеличение при навидении на блок мост*/
+.div4:hover{
+    background-size: 112% 112%;
+    
+}
+      
+                                                           /* блок девушка BG */ 
+.div5{
+    
+     float: left;
+     position: relative;
+     width: 16.66666666666667%;
+     background-image: url(images/baba.png);
+     background-repeat: no-repeat;
+     background-size:105% 105%;
+     height: 15vw;
+     background-position:center;
+    
+     transition: background-size 0.5s ease-out 0s;     
+}
+                                                        /*  увеличение при навидении на блок с девушкой */
+.div5:hover{
+    background-size: 112% 112%;
+    
+}
+
+
+                                                        /* fotter подвал сайта */
+.fotter{
+    line-height: 26px;
+    font-size: 14px;
+    text-align: center;
+    background: #ebebeb;
+    overflow: hidden;
+    padding-bottom: 125px;
+    margin: 0 auto;
+}
+.par_1{
+    font-size: 14px;
+    float: left;
+    max-width: 377px;
+    margin-bottom: 35px;
+    
+}
+.par_2{
+    float: left;
+    min-width: 200px;
+    max-width: 377px;
+}
+.par_3{
+    width: 377px;
+    float: left;
+    
+    margin-bottom: 35px;
+}
+.par_4{
+    width: 377px;
+    float: left;
+
+                                            /* выравнивание подвала по блокам */
+}
+.foter_dlock{
+    padding-top: 50px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: left;
+    display: inline-block;
+}
+.foter_dlock h2{
+    font-size: 30px;
+    color: #088ca5;
+    margin:0 0 28px 0;
+    
+}
+.stroka_futter_1{
+    overflow: hidden;
+    float: left;
+    width: 380px;
+    
+}
+.stroka_futter_2{
+    margin-left: 55px;
+    overflow: hidden;
+    float: left;
+    width:  380px;
+}
+
+
+
+
+                                                            /*    @media 1024px    */
+
+
+@media screen and (max-width:1024px){
+    .div1{ width: 77.63671875%; height: 25vw;}
+    
+    .div2{width: 22.359%; height: 25vw;}
+    .div3{clear: left; width: 33.30078125%; height: 30vw;}
+    .liniya_1{width: 100%; overflow: hidden;}
+    .div4{width: 33.30078125%;  height: 30vw;}
+    .div5{width: 33.30078125%;  height: 30vw;}
+}
+                                                            
+
+                                                            /*    @media 980px    */
+
+
+@media screen and (max-width:980px){
+    .awesome{height: 53vw;}
+    .foter_dlock{padding-top: 60px;}
+    
+}
+                                                            /*    @media 900px   */
+@media screen and (max-width:900px){
+    .foter_dlock h2{text-align: left;}
+    .stroka_futter_1,
+    .stroka_futter_2{margin: 0 auto; float: none;}
+    .stroka_futter_1{margin-bottom: 25px;}
+    .awesome2 h1{font-size:45px;line-height: 45px;}
+    .awesome2 a p{ font-size: 25px;line-height: 30px;}
+    .awesome2{margin-left: 50px;}
+    .div1 p{font-size: 24px;}
+}
+
+
+                                                         /*    @media 640px    */
+
+@media screen and (max-width:640px){
+    .par_1,
+    .par_2{font-size: 15px;}
+    .awesome h1 {font-size: 35px;line-height: 40px;}
+    .mini_menu{display:block;}
+    .menu{margin: 0 auto; display: none;}
+    .menu li{margin: 0; float: none; padding: 0;display: block; text-align: center;}
+    .menu li a{float: none; padding: 8px 0 8px 0;}
+    .menu li a:hover{background-color: #666;text-decoration: none;}
+    .stroka_futter_2{display: none;}
+    .awesome2 a p{ font-size: 20px;line-height: 25px;}
+    .div2 img{width: 14px;}
+    .div3{float: none; width: 100%; height: 85vw;}
+    .div3 img{width: 35px;}
+    .div4{float: none;width: 100%; height: 85vw;}
+    .div5{float: none;width: 100%; height: 85vw;}
+}
+
+                                                        /*    @media 500px    */
+
+
+@media screen and (max-width:500px){
+    .awesome h1 {font-size: 25px;line-height: 30px;margin-bottom: 20px;}
+    .awesome2{margin-left: 30px;}
+    .foter_dlock{margin: 0 auto;}
+    .fotter{text-align: center;}
+}
+                                                        /*    @media 400px    **/
+
+
+@media screen and (max-width:400px){
+    .awesome h1 {font-size: 18px; font-weight: normal;}
+    .div1 p{font-size: 14px;}
+    .par_1,
+    .par_2,
+    .stroka_futter_1,
+    .foter_dlock{font-size: 10px;width: 250px;}
+    .menu_trigger img{width: 40px;}
+    .mini_menu{height: 37px;}
+    .mini_menu p{font-size: 16px;padding: 10px 0 10px 17px;}
+    .fotter{padding: 0;}
+    .menu li a{font-size: 10px;line-height: 20px;padding: 5px 0 5px;}
+    
+}
+
+                                                        /*    @media 320px    */
+
+
+
+@media screen and (max-width:320px){
+    .awesome2 h1{margin-bottom: 10px;}
+    .awesome2 a p{font-size: 10px;}
+    .div1 p{font-size: 10px;}
+    .div2 img{width: 7px;vertical-align: middle;}
+    .div3 img{width: 17px;}
+    .par_1,
+    .par_2{font-size: 10px;}
+    .foter_dlock{padding-top: 20px;width: 250px;}
+    .foter_dlock h2{font-size: 20px; color: #088ca5; margin:0 0 10px 0;}
+    
+    
+}
